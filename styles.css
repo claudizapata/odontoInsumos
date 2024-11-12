@@ -1,0 +1,376 @@
+
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.estilo{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    justify-content: center;
+   
+}
+.estilo2{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    text-align: center;
+    padding: 1.5em;
+}
+
+/*Header*/
+.header_fondo{
+    background: url("./imagenes/wie-viele-zaehne-bekommt-ein-mensch.jpg") no-repeat center;
+    width: 100%;
+    height: 80vh;
+}
+
+.header_titulo{
+    padding: 2em;
+    
+}
+.insumos_titulo{
+    font-size: 4em;
+    font-weight: 500;
+    padding-bottom: .2em;
+  
+}
+.nav_container{
+    font-size: 1em;
+    justify-content: space-around;
+}
+.link_nav{
+    text-decoration: none;
+    color: bisque;
+    font-weight: bold;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    
+}
+.link_nav:hover{
+    color: white;
+    text-decoration: underline;
+}
+.container__titulo__parrafo{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 50%;
+}
+
+._titulo{
+    font-size: 2.5em;
+    font-weight: 300;
+    
+}
+._parrafo{
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-bottom: 2em;
+    color: black;
+    font-weight: bold;
+    width: 80%;
+}
+
+._rubros {
+    background-color: rgb(128, 116, 85);
+    border-radius: 2em;
+    text-decoration: none;
+    text-align: center;
+    width: 80%;
+    padding: 0.7em 0.1em; 
+    
+}
+
+/*Navbar*/
+
+.nav__elemen{
+    
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 80vh;
+}
+
+.navbar{
+    background: linear-gradient(rgba(17, 1, 1, 0.87) 20%, transparent 80%);
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    font-size: 3em;
+    font-weight: normal;
+}
+/*MAIN*/
+.separa{
+    height: 8vh;
+    background-color: black;
+    margin-bottom: 1em;
+}
+#nosotros{
+    height: 30vh;
+    padding: 2em 2em;
+    color: blue;
+    font-size: 1em;
+}
+.estilo4{
+    color: black;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.separa_header_color{
+    background-color: black;
+    height: 80vh;
+    margin-bottom: 1em;
+}
+#secciones{
+    padding-top: 4em;
+}
+.seccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.caja_producto{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 50vh;
+    cursor: pointer;
+}
+.caja_producto:hover{
+    border: solid aqua 6px;
+}
+.producto_imagen{
+    height: 80%;
+    width: 100%;    
+}
+
+.producto_titulo{
+    color: rgb(80, 199, 226);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    padding-top: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: white;
+    height: 20%;
+    align-self: initial;
+}
+/*FOOTER CON Encontranos*/
+.footer_caja{
+    color: black;
+    
+}
+#contacto{
+    background-image: url("./imagenes/muela_celeste_sonrie.png");
+    background-attachment: fixed;
+    height: 10vh;
+}
+.encontranos{
+    color: black;
+    padding-top: 1em;
+}
+
+.container__footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+    height: 70vh;
+}
+.img_muelita{
+    border-radius: 20% 30%;
+    padding: 0.5em;
+}
+.container__contac{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__titulo{
+    list-style-type: none;
+    color:rgb(80, 199, 226);
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1em;
+    font-weight: 300;
+}
+.menu__item{
+    list-style-type: none;
+    align-content: space-between;
+}
+.footer__social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__item{
+    list-style-type: none;
+}
+.footer__icon{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.fa-brands{
+    color: white;
+
+}
+.footer__icon:hover{
+    color: white;
+}
+.botones{
+    border: solid rgb(163, 94, 10) 4px;
+    color: rgb(163, 94, 10);
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+}
+
+.botones:hover{
+    color: rgb(163, 94, 10) ;
+}
+.maquetado{
+    background-color: rgb(39, 173, 203);
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    height: 2em;
+}
+/*-----------------------------*/
+/*PRODUCTOS.HTML*/
+*{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+.estilo3{
+    color: rgb(80, 199, 226);
+    font-weight: 600;
+   
+}
+.link_prod{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    
+}
+.link_prod:hover{
+    color: rgb(50, 50, 230);
+    text-decoration: underline;
+}
+.cuerpo_main{
+    margin: 0;
+}
+.botones_secciones{
+    margin: 0;
+    
+}
+.nav_botones_secciones{
+    display: flex;
+    justify-content:center;
+ 
+
+}
+.boton_inst{
+    background-color: rgb(128, 116, 85);    
+    padding: .5em 1.5em;
+    margin: 2em;
+    list-style-type: none;
+}
+.link_boton{
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.titulo_seccion{
+    padding: .6em;
+    background-color: rgb(80, 199, 226);
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    margin-top: .1em;
+    margin-bottom: 1em;
+}
+.seccion_prod{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vh;
+    margin: 2em;
+   
+}
+.caja_prod{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 50vh;   
+    border: solid rgb(128, 116, 85) 2px;
+    margin: 2em 2.5em;
+}
+.prod_imagen{
+    width: 100%;
+    height: 60%;
+
+}
+.prod_titulo{
+    color: black;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    padding-top: 1em 0.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: white;
+    height: 15%;
+    align-self: initial;
+
+}
+.prod_descrip{
+    font-size: 1em;
+    text-align: justify;
+    padding: .2em;
+    height: 25%;
+}
+.prod__boton{
+    padding: .7em 1em;
+    background-color: rgb(128, 116, 85);
+    color: white;
+    font-weight: bold;
+    border: 0;
+    margin-top: 2em;
+    cursor: pointer;      
+}
+
+/*RESEÑAS.HTML*/
+.buscar_carga{
+    padding: 2em;
+}
+.buscar_container{
+    display: flex;
+}
+
+.reseñas{
+    display: grid;
+    grid-template-columns: repeat(4, 17em);/*80px es el ancho de las columnas*/
+    grid-template-rows: repeat(5, 17em);/*160px de altura para la primera fila porque está la pantalla*/
+    margin-top: 2em;
+    justify-content: center;
+}
+.col{
+    background-color: rgb(0, 199, 226);
+    margin: 0.2em 0; 
+    padding: .6em .6em;
+    border: solid white 3px;
+    color: white;
+    font-weight: bold;    
+}
+
+
+
