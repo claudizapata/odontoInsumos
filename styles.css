@@ -163,7 +163,7 @@
     color: black;
     
 }
-#contacto{
+#ubicacion{
     background-image: url("./imagenes/muela_celeste_sonrie.png");
     background-attachment: fixed;
     height: 10vh;
@@ -371,6 +371,43 @@
     color: white;
     font-weight: bold;    
 }
+
+/*FORM CONTACTO*/
+.contacto_body{
+    margin: 2em 4em;
+}
+.contacto_caja_titulo{
+    display: flex;
+  align-items: center;
+}
+   
+.contacto_titulo{
+    color: rgb(80, 199, 226);
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: 3em;
+    padding-right: 1em;
+}
+.contacto_img{
+    border-radius: 10px 20px 10px 20px;
+   
+}
+.contacto_form{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:680px) {
+    .contacto_img{
+        display: none;
+    }
+    .contacto_titulo{
+        font-size: 1em;
+    }
+    .labe{
+        font-size: 0.7em;
+    }
+    
+
 
 
 

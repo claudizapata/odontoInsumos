@@ -4,73 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-    <form 
-        action="https://formspree.io/f/xkgnnkob"
-        method="post">
-            <label>Nombre:
+<body class="contacto_body">
+    <div class="contacto_caja_titulo">
+        <h2 class="contacto_titulo">Dejanos tu consulta, te responderemos a la brevedad</h2>
+        <img class="contacto_img" src="./imagenes/muela_celeste.. copia.png" alt="muelita">
+
+    </div>    
+    <div class="contacto_form">
+        <form action="https://formspree.io/f/xkgnnkob" method="post">
+            <label class="labe">Nombre:
                 <input type="text" id="name" name="nombre" maxlength="30"  placeholder="Tu nombre..." required>
             </label>
             <br>
             <br>
-            <label>Apellido:
+            <label class="labe">Apellido:
                 <input type="text" id="apell" name="apellido" maxlength="30" placeholder="Tu apellido..." required>
-            </label>
+            </label> 
             <br>
+       
             <br>
-            <label >Sexo:
-                <select name="sexo">
-                    <option value="seleccione">Seleccione</option>
-                    <option value="hombre">Hombre</option>
-                    <option value="mujer">Mujer</option>
-                    <option value="otro">Otro</option>
-                </select>
-            </label>
-            <br>
-            <br>
-            <br>
-            <fieldset>
-                <legend>Identificación:</legend>
-                    <label>Cliente
-                        <input type="" id="cliente" name="cliente" checked>
-                    </label>
-                    <br>
-                    <label>Proveedor
-                        <input type="checkbox" id="proveedor" name="proveedor">
-                    </label>
-            </fieldset>
-            <br>
-            <br>
-            <br>
-            <label>Correo Electrónico:
+            <label class="labe">Correo Electrónico:
                 <input type="email" id="email" name="email" placeholder="Email..." required>
             </label>
             <br>
             <br>
-                
-            <label>Teléfono o Celular:
-                <input type="numerico" id="telefono" name="telefono" placeholder="Número..." required>
-            </label>
-            <br>
-            <label for="text">(código de área -sin el 0- número de celular -sin el 15-)
-
-            </label>
-
+           
             <br>
             <br>
             <br>
-            <textarea placeholder="Déjanos tus sugerencias..."  name="comment" id="comment" cols="30" rows="10" aria-required="true" required></textarea>
+            <textarea class="text_contacto" placeholder="Dejanos tus sugerencias..."  name="comment" id="comment" maxlength="400" rows="15" cols="60" aria-required="true" required></textarea>
+            <br>
+            <label class="labe">(Hasta 400 caracteres)</label>
             <br>
             <br>
             <br>
 
-        
-            <button type="reset" value="Borrar">Borrar
+            <div class="contacto_botones">
+                <button type="reset" value="Borrar">Borrar
             
-            <button type="submit" class="btn" value="Enviar" onclick="validarCorreo(document.getElementById('email').value)">Enviar
+                <button type="submit" class="btn" value="Enviar" onclick="validarCorreo(document.getElementById('email').value)">Enviar
 
-    </form>
+            </div>
+            
+
+        </form>
+
+    </div>
+    
 
     <script src="/validar_correo.js"> </script>
 
