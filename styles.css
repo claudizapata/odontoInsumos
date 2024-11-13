@@ -29,10 +29,15 @@
     padding: 2em;
     
 }
+.caja_titulo{
+    display: flex;
+    
+}
 .insumos_titulo{
     font-size: 4em;
     font-weight: 500;
     padding-bottom: .2em;
+    margin-right: 0.5em;
   
 }
 .nav_container{
@@ -382,7 +387,7 @@
 }
 .contacto_caja_titulo{
     display: flex;
-  align-items: center;
+    align-items:flex-start;
 }
    
 .contacto_titulo{
