@@ -29,10 +29,7 @@
     padding: 2em;
     
 }
-.caja_titulo{
-    display: flex;
-    
-}
+
 .insumos_titulo{
     font-size: 4em;
     font-weight: 500;
@@ -318,12 +315,14 @@
     height: 50vh;   
     border: solid rgb(128, 116, 85) 2px;
     margin: 2em 2.5em;
+   
 }
 .prod_imagen{
     width: 100%;
-    height: 60%;
+    height: 30vh;
 
 }
+
 .prod_titulo{
     color: black;
     text-align: center;
@@ -331,17 +330,17 @@
     font-style: normal;
     padding-top: 1em 0.5em;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1em;
     background-color: white;
-    height: 15%;
+    height: 5vh;
     align-self: initial;
 
 }
 .prod_descrip{
-    font-size: 1em;
+    font-size: .8em;
     text-align: justify;
-    padding: .2em;
-    height: 25%;
+    padding: 1em;
+    height: 20vh;
 }
 .prod__boton{
     padding: .7em 1em;
@@ -350,7 +349,8 @@
     font-weight: bold;
     border: 0;
     margin-top: 2em;
-    cursor: pointer;      
+    cursor: pointer;
+    height: 10vh;   
 }
 
 /*RESEÑAS.HTML*/
