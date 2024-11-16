@@ -273,7 +273,7 @@
    justify-content: center;
 }
 .boton_inst{
-    background-color: rgb(128, 116, 85);    
+    background-color: rgb(50, 50, 230);    
     padding: .5em 1.5em;
     margin-top: 1em;
     margin-right: .5em;
@@ -344,22 +344,6 @@
 }
 
 /*RESEÑAS.HTML*/
-.h3_resenas{
-    color: rgb(50, 50, 230);
-    margin-bottom: 1em;
-}
-.buscar_carga{
-    padding: 2em;
-}
-fieldset{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-width: 30em;
-    margin-top: 5em;
-    margin-left: .4em;  
-   
-}
 
 .footer__item{
     list-style-type: none;
@@ -376,16 +360,37 @@ fieldset{
 .fa-regular{
     color: black;
 }
-.footer__icon:hover{
-    color: white;
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 30em;
+    max-height: 100vh;
+    margin-top: 1em;
+    margin-left: 3em;
+    border-radius: 10px;
+   
 }
+
 .resena_titulo{
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 5em;
+    color: rgb(0, 199, 226);
 }
 .resena_text{
     min-height: 50px;
     resize: none;
+}
+#btn_publicar{
+    width: 10vw;
+    height: 3vh;
+    background-color: rgb(50, 50, 230);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+
 }
 
 .resenas1{
@@ -395,7 +400,7 @@ fieldset{
     margin-top: .5em;
     justify-content: center;
 }
-.col{
+.resenas1_cajita{
     background-color: rgb(0, 199, 226);
     margin: .5em .2em; 
     padding: .6em .6em;
