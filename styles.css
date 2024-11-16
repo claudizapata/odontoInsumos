@@ -7,7 +7,7 @@
     color: white;
     font-family: "Roboto", sans-serif;
     font-style: normal;
-    justify-content: center;
+    
    
 }
 .estilo2{
@@ -237,41 +237,46 @@
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-style: normal;
+    scroll-behavior: smooth;
 }
-.estilo3{
-    color: rgb(80, 199, 226);
+.header_fondo_prod{
+    background: url("./imagenes/muela_explorador.png") no-repeat center;
+    width: 100%;
+    height: 60vh;
+}
+.insumos_tit{
+    font-size: 4em;
     font-weight: 600;
-   
+    padding-bottom: .2em;
+    margin-right: 0.5em;
+  
 }
+
 .link_prod{
     text-decoration: none;
-    color: black;
+    color: bisque;
     font-weight: bold;
     cursor: pointer;
-    scroll-behavior: smooth;
+    
     
 }
 .link_prod:hover{
-    color: rgb(50, 50, 230);
+    color: white;
     text-decoration: underline;
 }
-.cuerpo_main{
-    margin: 0;
-}
+
 .botones_secciones{
-    margin: 0;
-    
+    justify-content: center;
 }
 .nav_botones_secciones{
     display: flex;
-    justify-content:center;
- 
-
+   justify-content: center;
 }
 .boton_inst{
     background-color: rgb(128, 116, 85);    
     padding: .5em 1.5em;
-    margin: 2em;
+    margin-top: 1em;
+    margin-right: .5em;
     list-style-type: none;
 }
 .link_boton{
@@ -286,16 +291,11 @@
     background-color: rgb(80, 199, 226);
     font-size: 1.2em;
     color: white;
-    text-align: center;
-    margin-top: .1em;
-    margin-bottom: 1em;
+    text-align: center;    
 }
 .seccion_prod{
     display: flex;
     flex-wrap: wrap;
-    height: 60vh;
-    margin: 2em;
-   
 }
 .caja_prod{
     display: flex;
@@ -327,7 +327,7 @@
 }
 .prod_descrip{
     font-size: .8em;
-    text-align: justify;
+    text-align: center;
     padding-left: .5em;
     padding-right: .5em;
     height: 25vh;
@@ -354,10 +354,10 @@
 fieldset{
     display: flex;
     flex-direction: column;
-   text-align: left;
-   max-width: 30em;
-   margin-top: 5em;
-   margin-left: .4em;  
+    text-align: left;
+    max-width: 30em;
+    margin-top: 5em;
+    margin-left: .4em;  
    
 }
 
@@ -370,8 +370,11 @@ fieldset{
 }
 
 .fa-star{
-    color: rgb(250, 246, 24);
+    color: rgb(34, 34, 19);
 
+}
+.fa-regular{
+    color: black;
 }
 .footer__icon:hover{
     color: white;
