@@ -82,7 +82,8 @@
     text-decoration: none;
     text-align: center;
     width: 80%;
-    padding: 0.7em 0.1em; 
+    padding: 0.7em 0.1em;
+    margin-top: 1em;
     
 }
 
@@ -373,7 +374,6 @@ fieldset{
     margin-left: 3em;
     border-radius: 10px ;
     border: 5px solid rgb(0, 199, 226);
-   
 }
 
 .resena_titulo{
@@ -382,7 +382,7 @@ fieldset{
     color: rgb(0, 199, 226);
 }
 .resena_text{
-    min-height: 50px;
+    max-height: 30vh;
     resize: none;
 }
 #btn_publicar{
@@ -393,7 +393,6 @@ fieldset{
     font-weight: bold;
     text-align: center;
     margin-top: 1em;
-
 }
 
 .resenas1{
@@ -417,39 +416,31 @@ fieldset{
     background-color: rgb(50, 50, 230);
     border-radius: 5px;
     padding: 0.2em 0.4em;
-
-
+    text-align: center;
 }
-
 /*FORM CONTACTO*/
-.contacto_body{
-    margin: 2em 4em;
-}
-.contacto_caja_titulo{
+
+.parrafo_muelita{
     display: flex;
-    align-items:flex-start;
-}
-   
-.contacto_titulo{
-    color: rgb(80, 199, 226);
-    text-align: left;
-    font-size: 1.5em;
-    margin-bottom: 3em;
-    padding-right: 1em;
 }
 .contacto_img{
-    border-radius: 10px 20px 10px 20px;
+    width: 40px;
+    height: 40px;
    
 }
 .contacto_form{
     display: flex;
     flex-direction: column;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-bottom: 2em;
 }
 form textarea{
     min-height: 50px;
     resize: none;
     
 }
+
 
 @media screen and (max-width:680px) {
     .contacto_img{
