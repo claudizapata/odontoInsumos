@@ -69,10 +69,11 @@
     margin-top: 1em;
     font-size: 1.5em;
     font-weight: 200;
-    margin-bottom: 2em;
+    margin-bottom: auto;
     color: black;
     font-weight: bold;
     width: 80%;
+    
 }
 
 ._rubros {
@@ -247,8 +248,9 @@
 .insumos_tit{
     font-size: 4em;
     font-weight: 600;
-    padding-bottom: .2em;
+    padding-bottom: .4em;
     margin-right: 0.5em;
+    margin-top: 1em;
   
 }
 
@@ -366,16 +368,17 @@ fieldset{
     flex-direction: column;
     text-align: left;
     max-width: 30em;
-    max-height: 100vh;
+    max-height: 40vh;
     margin-top: 1em;
     margin-left: 3em;
-    border-radius: 10px;
+    border-radius: 10px ;
+    border: 5px solid rgb(0, 199, 226);
    
 }
 
 .resena_titulo{
     margin-top: 1em;
-    margin-bottom: 5em;
+    margin-bottom: 1em;
     color: rgb(0, 199, 226);
 }
 .resena_text{
@@ -408,7 +411,14 @@ fieldset{
     color: white;
     font-weight: bold;    
     border-radius: 10px;
-    border: 2px solid rgb(50, 50, 230) ;
+    border: 2px solid rgb(50, 50, 230);
+}
+.prod_usuario{
+    background-color: rgb(50, 50, 230);
+    border-radius: 5px;
+    padding: 0.2em 0.4em;
+
+
 }
 
 /*FORM CONTACTO*/
