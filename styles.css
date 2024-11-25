@@ -40,11 +40,11 @@
 .header_titulo{
     padding: 3em;
     padding-top: 1em;
-}
+}/*
 .iniciar_titulo{
     display: flex;
     justify-content: space-between;
-}
+}*/
 .fa-user{
     color: white;
 }
@@ -110,19 +110,42 @@
         padding: 1em;
         padding-bottom: 0;
         padding-right: 1em;
-    }
+    }    
     .iniciar_sesion{
         display: flex;
-        flex-direction: column;    
-        color: white;
+        flex-direction: column;        
+        color: rgb(25, 68, 241);
         text-decoration: none;
-        text-align: center;    
+        text-align: center;
+        font-size: 1em;
+       padding: .5em;      
+    }    
+    .fa-user{
+        color: rgb(25, 68, 241);
     }
  
-    .header_titulo{        
+    .header_titulo{    
+        padding: 0;    
         padding-top: 1.5em;
         padding-bottom: 1em;
         margin-bottom: 0;
+    }       
+    .insumos_titulo{
+        font-size: 2.5em;
+        font-weight: 500;             
+        color: rgb(39, 173, 203);
+        padding-bottom: 0;
+        margin-bottom: 1em; 
+    }
+    .titulo_img_banner{
+        display: flex;  
+        
+    }
+    .titulo_img_banner img{
+        display:block ;
+        width: 40px;
+        height: 40px;
+        margin-right: 0;
     }
     
     .nav_container{       
@@ -133,36 +156,6 @@
         justify-content: initial;
     }
     
-    .iniciar_sesion{
-        display: flex;
-        flex-direction: column;        
-        color: rgb(25, 68, 241);
-        text-decoration: none;
-        text-align: center;
-        font-size: 1em;
-       padding: .5em;      
-    }
-    
-    .fa-user{
-        color: rgb(25, 68, 241);
-    }
-    .titulo_img_banner{
-        display: flex;       
-        
-    }
-    .titulo_img_banner img{
-        display:block ;
-        width: 40px;
-        height: 40px;
-        margin-right: 0;
-    }
-    .insumos_titulo{
-        font-size: 2.5em;
-        font-weight: 500;             
-        color: rgb(39, 173, 203);
-        padding-bottom: 0;
-        margin-bottom: 1em; 
-    }
     .link_nav{
         text-decoration: none;
         color: rgb(25, 68, 241);
