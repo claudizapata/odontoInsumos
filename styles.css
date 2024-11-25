@@ -249,7 +249,7 @@
     align-self: initial;
 }
 /*****************************************/
-@media screen and (max-width:680px) {
+@media screen and (max-width:780px) {
     .main_container{
         margin: 0;
 
@@ -391,7 +391,7 @@
     height: 2em;
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:780px) {
     .footer_caja{
         height: auto;
         background-color: black;
@@ -573,7 +573,7 @@
     height: 10vh;   
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 780px) {
     .header_fondo_prod{
         background: none;
         height: 18vh;
@@ -820,7 +820,7 @@ fieldset{
     padding: 0.2em 0.4em;
     text-align: center;
 }
-@media screen and (max-width:680px) {
+@media screen and (max-width:780px) {
     .header_fondo_not{
         height: 18vh;
         background: none;        
@@ -930,7 +930,7 @@ form textarea{
 }
 
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:780px) {
   
     .contacto_img{
         display: none;
