@@ -8,9 +8,9 @@
     <link rel="icon" type="image/png"   href="imagenes/muelita_marca_menor.png" sizes="64x64">
 </head>
 <body>
-    <header class="header_fondo_prod">
+    <header class="header_fondo_not">
         <div class="header_titulo">
-            <h1 class="insumos_tit estilo">Odonto Insumos</h1>
+            <h1 class="insumos_titulo estilo">Odonto Insumos</h1>
             <nav class="nav_container">
                 <a class="link_prod"  href="./index.html">Home</a>
                 <a class="link_prod"  href="./productos.html">Productos</a>
@@ -32,35 +32,33 @@
         <div class="contacto_form">
             <form action="https://formspree.io/f/xkgnnkob" method="post">
                 <label class="labe">Nombre:
-                    <input type="text" id="name" name="nombre" maxlength="30"  placeholder="Tu nombre..." required>
+                    <input class="campo_text" type="text" id="name" name="nombre" maxlength="30"  placeholder="Tu nombre..." required>
                 </label>
                 <br>
                 <br>
                 <label class="labe">Apellido:
-                    <input type="text" id="apell" name="apellido" maxlength="30" placeholder="Tu apellido..." required>
+                    <input class="campo_text" type="text" id="apell" name="apellido" maxlength="30" placeholder="Tu apellido..." required>
                 </label> 
                 <br>
            
                 <br>
                 <label class="labe">Correo Electrónico:
-                    <input type="email" id="email" name="email" placeholder="Email..." required>
+                    <input class="campo_text" type="email" id="email" name="email" placeholder="Email..." required>
                 </label>
                 <br>
                 <br>
                
-                <br>
-                <br>
-                <br>
-                <textarea placeholder="Dejanos tus sugerencias..."  name="comment" id="comment" maxlength="400" rows="10" cols="40" required></textarea>
+            
+                <textarea placeholder="Dejanos tus sugerencias..."  name="comment" id="comment" maxlength="400" rows="5" cols="40" required></textarea>
                 <br>
                 <label class="labe">(Hasta 400 caracteres)</label>
                 <br>
                 <br>
                 <br>
                 <div class="contacto_botones">
-                    <button type="reset" value="Borrar">Borrar
+                    <button class="btn_publicar" type="reset" value="Borrar">Borrar
                 
-                    <button type="submit" class="btn" value="Enviar" onclick="validarCorreo(document.getElementById('email').value)">Enviar
+                    <button class="btn_publicar" type="submit" class="btn" value="Enviar" onclick="validarCorreo(document.getElementById('email').value)">Enviar
                 </div>
              </form>
         </div>
