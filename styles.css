@@ -431,6 +431,7 @@
     }
     .maquetado{
         font-weight: normal;
+        color: red;
         font-size: 1em;
     }
 }
