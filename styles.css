@@ -99,7 +99,7 @@
 @media screen and (max-width: 768px) {
     .header_fondo{
         background: none;
-        height: 30vh;
+        height: 40vh;
         margin-bottom: 1em;
         margin-left: 1em;
         margin-right: 1em;              
@@ -276,7 +276,7 @@
     }
     #nosotros{
         height: auto;
-        margin-left: .5em;
+        margin-left: 1em;
         margin-right: 1em;
         padding: 0 0;
         margin-bottom: 1em;
