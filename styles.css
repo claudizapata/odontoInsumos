@@ -814,7 +814,7 @@ fieldset{
 }
 @media screen and (max-width:768px) {
     .header_fondo_not{
-        height: 18vh;
+        height: 20vh;
         background: none;        
         justify-content: center;
         margin: 1em 2em 5em .5em;       
@@ -823,12 +823,15 @@ fieldset{
         justify-content: center;
     }
     
-        
+    .resenas_fieldset{
+        display: flex;
+        justify-content: center;
+    }  
     fieldset{
         display: flex;
         flex-direction: column;
         text-align: left;
-        max-width: 15em;
+        max-width: 20em;
         max-height: auto;
         margin-top: 1em;
         margin-left: .1em;
@@ -852,7 +855,7 @@ fieldset{
         height: 2em;
         background-color: rgb(50, 50, 230);
         color: white;
-        font-size: .8em;
+        
         font-weight: normal;
         text-align: center;
         border-radius: 8px;
@@ -937,8 +940,7 @@ form textarea{
         display: none;
     }
     main{
-        justify-content: center;
-        background-color: rgb(244, 237, 237);
+        justify-content: center;       
     }
     
     .contacto_form{
