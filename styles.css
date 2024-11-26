@@ -40,11 +40,7 @@
 .header_titulo{
     padding: 3em;
     padding-top: 1em;
-}/*
-.iniciar_titulo{
-    display: flex;
-    justify-content: space-between;
-}*/
+}
 .fa-user{
     color: white;
 }
@@ -87,7 +83,7 @@
     font-size: 2.5em;
     font-weight: 300;    
 }
-._parrafo{
+._parrafo_index{
     margin-top: 1em;
     font-size: 1.5em;
     font-weight: 200;
@@ -126,7 +122,7 @@
     .header_titulo{    
         padding: 0;    
         padding-top: 1.5em;
-        padding-bottom: 1em;
+        padding-bottom: .5em;
         margin-bottom: 0;
     }       
     .insumos_titulo{
@@ -146,7 +142,7 @@
         margin-right: 0;
     }    
     .nav_container{       
-        margin-bottom: .5em;
+        margin-bottom: 1em;
         justify-content: left;       
         padding: 0 0;
         width: 100%;
@@ -174,7 +170,7 @@
     ._titulo{
         display: none ;        
     }
-    ._parrafo{
+    ._parrafo_index{
         text-align: left; 
         font-size: 1em;
         margin-top: 1em;
@@ -482,6 +478,16 @@
 .icon_carrito_celeste{
     display: none;
 }
+
+._parrafo{
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-bottom: 1em;
+    color: black;
+    font-weight: bold;
+    width: 80%;    
+}
 .insumos_tit_prod{
     font-size: 4em;
     font-weight: 500;
@@ -532,7 +538,8 @@
 }
 .seccion_prod{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;    
 }
 .caja_prod{
     display: flex;
@@ -677,26 +684,27 @@
         align-content: center;     
     }
     .titulo_seccion{
-        font-size: 1.2em;
-        padding: 0.5em 0.5em;
+        font-size: 1.2em;        
         margin-top: .2em;
-        margin-bottom: .2em;
+        margin-bottom: .2em;    
+        padding: .2em;
+        background-color: rgb(80, 199, 226);
+        color: white;
+        text-align: center;    
     }
-        
     .caja_prod{
         display: flex;
         flex-direction: column;
         width: 35%;
         height: auto;   
         border: solid rgb(128, 116, 85) 2px;
-        margin-left: 3em;
+        margin-left: 2em;
         font-size: .8em;    
     }
     .prod_imagen{
         width: 100%;
         height: 15vh;
     }
-
     .prod_titulo{
         color: black;
         text-align: center;
@@ -707,7 +715,6 @@
         height: 2vh;
         align-self: initial;
         margin-bottom: .2em;
-
     }
     .prod_descrip{
         text-align: center;
@@ -727,12 +734,6 @@
         height: 3vh;
     }
     
-    .titulo_seccion{
-        padding: .2em;
-        background-color: rgb(80, 199, 226);
-        color: white;
-        text-align: center;    
-    }
 }
 
 /*RESEÑAS.HTML*/
@@ -740,6 +741,11 @@
     background: url("./imagenes/muela_explorador.png") no-repeat center;
     width: 100%;
     height: 60vh;
+}
+
+.header_titulo_not{
+    padding: 3em;
+    padding-top: 4em;
 }
 
 ._titulo{
@@ -798,7 +804,6 @@ fieldset{
     text-align: center;
     margin-top: 1em;
 }
-
 .resenas1{
     display: grid;
     grid-template-columns: repeat(4, 17em);/*18em es el ancho de las columnas*/
@@ -822,10 +827,16 @@ fieldset{
 }
 @media screen and (max-width:768px) {
     .header_fondo_not{
-        height: 20vh;
+        height: 25vh;
         background: none;        
         justify-content: center;
-        margin: 1em 2em 5em .5em;       
+        margin: 1em 2em 4em .5em;       
+    }        
+    .header_titulo_not{
+        padding: 0;    
+        padding-top: 1.5em;
+        padding-bottom: 1em;
+        margin-bottom: 0;
     }
     .resenas_fondo{
         justify-content: center;
@@ -846,8 +857,6 @@ fieldset{
         border-radius: 5px ;
         border: 2px solid black;
     }
-
-
     .resena_titulo{
         margin-top: .3em;
         margin-bottom: .3em;
@@ -862,13 +871,11 @@ fieldset{
         width: 6em;
         height: 2em;
         background-color: rgb(50, 50, 230);
-        color: white;
-        
+        color: white;        
         font-weight: normal;
         text-align: center;
         border-radius: 8px;
     }
-
     .resenas1{
         display: grid;
         grid-template-columns: repeat(2, 13em);/*6em es el ancho de las columnas*/
@@ -890,14 +897,12 @@ fieldset{
         border-radius: 5px;
         padding: 0.2em 0.4em;
         text-align: center;
-        font-size: .8em;
-        
+        font-size: .8em;        
     }
     .col{
         font-size: .7em;
-    }
-
-    
+        margin-top: .5em;
+    }    
 }
 /*FORM CONTACTO.HTML*/
 
@@ -935,14 +940,22 @@ form textarea{
     margin-right: .5em;
 }
 
-
 @media screen and (max-width:768px) {
     ._titulo{
         display: block;
         color: rgb(193, 29, 29);
         font-size: 1.5em;
         font-weight: bold;
-
+    }
+    ._parrafo{
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 2em;
+        width: auto;        
+        padding: 1.2em 3em;
+        align-items: center;
+        color: black;
+        font-size: 1em;
     }
     .contacto_img{
         display: none;
