@@ -119,11 +119,10 @@
         text-align: center;
         font-size: 1em;
        padding: .5em;      
-    }    
+    }
     .fa-user{
         color: rgb(25, 68, 241);
-    }
- 
+    } 
     .header_titulo{    
         padding: 0;    
         padding-top: 1.5em;
@@ -138,24 +137,21 @@
         margin-bottom: 1em; 
     }
     .titulo_img_banner{
-        display: flex;  
-        
+        display: flex;        
     }
     .titulo_img_banner img{
         display:block ;
         width: 40px;
         height: 40px;
         margin-right: 0;
-    }
-    
+    }    
     .nav_container{       
         margin-bottom: .5em;
         justify-content: left;       
         padding: 0 0;
         width: 100%;
         justify-content: initial;
-    }
-    
+    }    
     .link_nav{
         text-decoration: none;
         color: rgb(25, 68, 241);
@@ -277,6 +273,9 @@
     .estilo4 {
         margin-bottom: 0;
     }
+    #secciones{
+        padding-top: 1.5em;
+    }
     #nosotros h2{
         font-size: 1.5em;
         padding: 0 0;
@@ -297,8 +296,8 @@
     }
     .separa_header_color{
         background-color: rgb(133, 154, 197);
-        height: auto;
-        margin-bottom: .2em;
+        height: 30vh;       
+        margin-top: 2em;
     }
     #secciones h2{
         font-size: 1.5em;
@@ -328,10 +327,6 @@
     }
 }
 /*FOOTER CON Encontranos*/
-.footer_caja{
-    color: black;
-    
-}
 #ubicacion{
     background-image: url("./imagenes/muela_celeste_sonrie.png");
     background-attachment: fixed;
@@ -405,7 +400,6 @@
         background-color: black;
         justify-content: left;
         margin: 0;
-       
     }
     
     #ubicacion{
@@ -610,14 +604,15 @@
     }
     
     .insumos_tit_prod{
-        font-size: 1.2em;
+        font-size: 2.5em;
         font-weight: 500;             
         color: rgb(39, 173, 203);
-        padding-bottom: 0;     
+        padding-bottom: 0;
+        margin-bottom: 0.5em;    
     }
     .img_banner{
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
     
     .link_prod{
@@ -625,8 +620,7 @@
         color: rgb(25, 68, 241);
         font-weight: bold;
         cursor: pointer;
-        scroll-behavior: smooth;
-        font-size: .5em;
+        font-size: 1em;
     }
     .link_prod:hover{
         color: black;
@@ -637,8 +631,8 @@
     
     .icon_carrito_celeste{
         display: block;
-        width: .7rem;
-        height: .7rem;
+        width: 25px;
+        height: 25px;
         text-align: right;
     }
         
@@ -671,12 +665,12 @@
     }
     .link_bot{       
         display: inline;
-        color: blue;
-        font-size: .5em;       
+        color: rgb(193, 29, 29);
+        font-size: 1em;       
         font-weight: bold;               
     }
     .titulo_seccion{
-        font-size: .6em;
+        font-size: 1.2em;
         padding: 0.5em 0.5em;
         margin-top: .2em;
         margin-bottom: .2em;
@@ -685,14 +679,15 @@
     .caja_prod{
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 30%;
         height: auto;   
         border: solid rgb(128, 116, 85) 2px;
-        margin: 1em .5em;   
+        margin-left: 3em;
+        font-size: .8em;    
     }
     .prod_imagen{
         width: 100%;
-        height: 10vh;
+        height: 15vh;
     }
 
     .prod_titulo{
@@ -700,8 +695,7 @@
         text-align: center;
         font-family: "Roboto", sans-serif;
         font-style: normal;
-        font-weight: bold;
-        font-size: .5em;
+        font-weight: bold;        
         background-color: white;
         height: 2vh;
         align-self: initial;
@@ -709,7 +703,6 @@
 
     }
     .prod_descrip{
-        font-size: .5em;
         text-align: center;
         padding-left: 0;
         padding-right: 0;
@@ -724,7 +717,6 @@
         margin-top: 0.5em;
         cursor: pointer;
         height: 3vh;
-        font-size: .4em;
     }
     
     .titulo_seccion{
@@ -748,12 +740,7 @@
 
 .footer__item{
     list-style-type: none;
-}/*
-.resenas_fondo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}*/
+}
 .footer__icon{
     width: 0.5rem;
     height: 0.5rem;
@@ -830,7 +817,7 @@ fieldset{
         height: 18vh;
         background: none;        
         justify-content: center;
-        margin: 1em 2em .5em .5em;       
+        margin: 1em 2em 3em .5em;       
     }
     .resenas_fondo{
         justify-content: center;
@@ -872,7 +859,7 @@ fieldset{
 
     .resenas1{
         display: grid;
-        grid-template-columns: repeat(2, 6em);/*6em es el ancho de las columnas*/
+        grid-template-columns: repeat(3, 10em);/*6em es el ancho de las columnas*/
         grid-template-rows: repeat(5, 6em);/*6em de altura para la primera fila porque está la pantalla*/
         margin-top: .5em;
         justify-content: center;
@@ -920,7 +907,7 @@ fieldset{
 form textarea{
     min-height: 50px;
     resize: none;    
-}
+} 
 
 .contacto_botones{
     display: flex;   
@@ -942,25 +929,32 @@ form textarea{
     .contacto_img{
         display: none;
     }
+    main{
+        justify-content: center;
+    }
     
     .contacto_form{
         display: flex;
         flex-direction: column;
-        margin: .5em .2em .5em .2em;       
+        justify-content: center;
+        align-content: center;
+        width: 80%;
+        margin: .5em;
+        margin-left: 3em;   
         background-color: rgb(244, 237, 237);      
         height: 39vh;
     }
     form textarea{
         min-height: 50px;
         resize: none;
-        font-size: .5em;            
+        font-size: 1em;            
     }
     .campo_text{
         font-size: .9em;
 
     }
     .labe{
-        font-size: .5em;
+        font-size: 1em;
     }
      .contacto_botones{
         display: flex;
@@ -969,10 +963,11 @@ form textarea{
      }   
     .btn_publicar{
         width: 30vw;
-        height: 2.5vh;
+        height: 3vh;
+        border-radius: 10px;
         background-color: rgb(50, 50, 230);
         color: white;
-        font-size: .4em;
+        font-size: 1em;
         font-weight: normal;
         text-align: center;  
     }
