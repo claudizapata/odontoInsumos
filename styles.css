@@ -688,7 +688,8 @@
         height: auto;   
         border: solid rgb(128, 116, 85) 2px;
         margin-left: 2em;
-        font-size: .8em;    
+        font-size: .8em;
+        margin-bottom: 0.5em;
     }
     .prod_imagen{
         width: 100%;
