@@ -17,7 +17,8 @@
                 <div class="caja_carrito">
                     <a href="#"><img class="icon_carrito" src="./imagenes/iconos/cart-shopping-solid.png" alt="carrito"></a>
                     <a href="#"><img class="icon_carrito_celeste" src="./imagenes/iconos/cart-shopping-celeste.png" alt="carrito"></a>
-                    <p class="cantidad">Cantidad(0)</p>
+                    <p>carrito</p>
+                    <p class="cantidad" id="cantidad">0</p>                
                 </div> 
             </div>
             <div class="header_nav">
@@ -61,8 +62,8 @@
                     <img class="prod_imagen" src="./imagenes/flex_productos/Alginato_453gr.png" alt="alginato">              
                     <p class="prod_titulo">Alginato 435gr</p>
                     <p class="prod_titulo">$8.000</p>
-                    <p class="prod_descrip">Alginato para impresiones con indicador de fase cromática</p>   
-                    <button class="prod__boton">Agregar al carrito</button>
+                    <p class="prod_descrip">Alginato para impresiones con indicador de fase cromática</p>                       
+                    <button class="prod__boton" onclick="comprar()">Agregar al carrito</button>
                 </div>
                 <div class="caja_prod">
                     <img class="prod_imagen" src="./imagenes/flex_productos/composite.png" alt="composite">
@@ -155,12 +156,15 @@
             </section>
         </div>
 
+        <ul id="lista_prod">
+            <!--<li class="unidad_prod"><input type="checkbox"><button>+</button>producto<button>-</button></li>-->
+        </ul>
     </main>
     <footer>
         
         
 
     </footer>
-    
+    <script src="/js/carrito.js"></script>
 </body>
 </html>

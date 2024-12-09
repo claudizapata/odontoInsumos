@@ -169,10 +169,7 @@
         margin-right: 1em;
         margin-bottom: 0;
         margin-left: 0;
-    }    
-    ._titulo{
-        display: none ;        
-    }
+    }   
     ._parrafo_index{
         display: none;
         text-align: left; 
@@ -182,7 +179,7 @@
         font-family: "Roboto", sans-serif;
         font-style: normal;         
         font-weight: none;
-        width: 100%;       
+        width: 100%;        
     }
 }
 
@@ -305,7 +302,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 25%;
+        width: 28%;
         height: 20vh;
         cursor: none;
           
@@ -511,8 +508,9 @@
    justify-content: center;
 }
 .boton_inst{
-    background-color: rgb(50, 50, 230);    
-    padding: .5em 1.5em;
+    background-image: conic-gradient(rgb(80, 199, 226),rgb(232, 213, 166)); 
+    /* background-color: rgb(50, 50, 230);     */
+    padding: 1em 1.5em;
     margin: 1em;
     margin-right: .5em;
     list-style-type: none;
@@ -588,7 +586,7 @@
 @media screen and (max-width: 768px) {
     .header_fondo_prod{
         background: none;
-        height: 25vh;
+        height: 35vh;
         margin-top: 1em ;
         margin-bottom: 3.5em;
         margin-left: .5em;
@@ -650,10 +648,6 @@
         flex-direction: column;
         margin-top: 0;  
     }
-    ._titulo{
-        display: none;
-        
-    }
    .nav_botones_secciones{
         display: none;
         flex-direction: none;
@@ -661,7 +655,7 @@
     }
     .boton_inst{
         display: none;
-        background-color: none;    
+        background-image: conic-gradient(rgb(80, 199, 226),rgb(166, 192, 244),rgb(232, 213, 166)); 
         list-style-type: none;
         border-radius: none;          
     }
@@ -678,7 +672,7 @@
         font-size: 1em;
         text-decoration: none;     
         font-weight: bold;
-        background-color: rgb(100, 100, 234);  
+        background-image: conic-gradient(rgb(80, 199, 226),rgb(232, 213, 166)); 
         border-radius: 10px;
         width: 10em; 
         height: 3em;
@@ -699,13 +693,14 @@
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        width: 35%;
+        width: 40%;
         height: auto;   
         border: solid rgb(128, 116, 85) 2px;
-        margin-left: 2em;
+        margin-left: 1em;
         font-size: .8em;
         margin-bottom: 0.2em;
         border-radius: 10px;
+        margin-right: 1em;
         
     }
     .prod_imagen{
@@ -951,14 +946,16 @@ form textarea{
     ._titulo{        
         display: flex;
         align-items: center;
-        color: rgb(193, 29, 29);
+        color: white;
         font-size: 1.5em;
         font-weight: bold;
+        background-image: conic-gradient(rgb(80, 199, 226),rgb(232, 213, 166)); 
+        padding: 0.2em;      
     }
     ._parrafo{
         border: 1px solid black;
         border-radius: 5px;
-        height: 2em;
+        height: 3em;
         width: auto;        
         padding: 1.2em 3em;
         align-items: center;
@@ -1009,7 +1006,31 @@ form textarea{
         font-weight: normal;
         text-align: center;  
     }
-} 
+}
+
+/*LISTA PRODUCTOS.HTML*/
+#lista_titulo{    
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: rgb(0, 199, 226);
+}
+.ancho_lista{
+    height: 50%;
+    width: 40em;
+    background-color: bisque;
+    justify-content: space-around;
+}
+.unidad_prod{    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around  ;
+    align-content:center;
+}
+.botones_compra{
+    margin-top: 10em;
+}
+
+
 
 
 
