@@ -26,11 +26,7 @@ function pruebas(){
 
     let mensaje = edad >= 13 ? "Se puede registrar" : "No se puede registrar";
     console.log(mensaje);
-
-
-
 }
-
-
+   
 
     

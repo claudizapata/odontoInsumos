@@ -195,7 +195,7 @@ article .prod_titulo{
 @media screen and (max-width: 768px) {
     .header_fondo_prod{
         background: none;
-        height: 20em;
+        height: 18em;
         margin-top: 1em ;
         margin-bottom: 3.5em;
         margin-left: .5em;
@@ -289,8 +289,8 @@ article .prod_titulo{
         text-align: left; 
         font-size: 1em;
         color: black;
-        margin-top: 1em;
-        margin-bottom: .5em;            
+        margin-top: 0;
+        margin-bottom: 2em;            
         font-family: "Roboto", sans-serif;
         font-style: normal;         
         font-weight: none;
@@ -338,9 +338,9 @@ article .prod_titulo{
         text-align: center;    
     }     ***/
     .titulo_seccion{
-        padding: .2em;
+        padding: .4em;
         background-color: blue;
-        font-size: 1em;
+        font-size: .8em;
         color: white;
         text-align: center;
         margin-bottom: 1em;  
@@ -353,36 +353,38 @@ article .prod_titulo{
     }
     article{   
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 40%;
         height: auto;   
         border: solid rgb(128, 116, 85) 2px;
-        margin: .7em 1em .2em 1em;         
-        font-size: .8em;       
+        margin: .7em .2em .2em .2em;    
         border-radius: 10px;            
     }
     article img{
-        height: 8em;
+        height: 4em;
         aspect-ratio: 2; 
     }
     .prod_titulo{
         color: black;
         text-align: center;
         font-family: "Roboto", sans-serif;
-        font-style: normal;
+        
         font-weight: bold;        
         background-color: white;
         height: 2vh;
         align-self: initial;
-        margin-bottom: .2em;
+        margin-bottom: .1 em;
+        font-size: .5em;     
     }
-    article .prod_descrip{
+    .prod_descrip{
         display: flex;      
         text-align: center;
         padding-left: 0.2em;
         padding-right: 0.2em;
         height: 7vh;
-        font-size: .2em;
+        font-size: .4em;
     }
     .prod__boton{
         padding: .2em 1em;
@@ -392,7 +394,9 @@ article .prod_titulo{
         border: 0;
         margin-top: 0.5em;
         cursor: pointer;
-        height: 3vh;
+        height: 2.7vh;
+        font-size: .3em;
+        border-radius: 4px;
         
     }    
     .prod__boton:hover{

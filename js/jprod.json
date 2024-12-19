@@ -42,7 +42,7 @@
     {
         "id": 6,
         "nombre": "Explorador y Espejo",
-        "descripcion": "Triada Dental Espejo+Explorador+Pinza",
+        "descripcion": "Triada Dental Espejo + Explorador + Pinza",
         "imagen": "triada-dental.png",
         "precio": 5800,
         "stock": 30
@@ -57,7 +57,7 @@
     },
     {
         "id": 8,
-        "nombre": "Barbijo",
+        "nombre": "Barbijos",
         "descripcion": "Kn 95 X 10 Un en sobre Individual Color",
         "imagen": "barbijos.png",
         "precio": 1720,
