@@ -502,10 +502,6 @@
         list-style-type: none;
         text-decoration: none;
     }
-    iframe{
-        width: 350;
-        height: 250;
-    }
     .maquetado{
         font-weight: normal;
         color: black;

@@ -3,7 +3,7 @@ const productos = [
         id: 1,
         nombre: "Alginato 435gr",
         descripcion: "Con indicador de fase cromática",
-        imagen: "./imagenes/flex_productos/Alginato_453gr.png",
+        imagen: "Alginato_453gr.png",
         precio: 8000,
         stock: 40,        
     },
