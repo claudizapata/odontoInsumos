@@ -4,10 +4,10 @@ fetch("./js/jprod.json")
         const section = document.getElementsByClassName("seccion_prod");
 
         section.innerHTML ="";
-        productos.forEach((prod) => {
+        jprod.forEach((prod) => {
             const html = `
                 <article> 
-                            <img src="../imagenes/${prod.imagen}.png" alt="${prod.nombre}">
+                            <img src="../imagenes/flex_productos/${prod.imagen}.png" alt="${prod.nombre}">
                             <h3 class="prod_titulo">${prod.nombre}</h3>
                             <p class="prod_titulo">$${prod.precio}</p>       
                             <p class="prod_descrip">${prod.descripcion}</p>                             
