@@ -110,8 +110,8 @@
         background: none;
         height: auto;
         margin-bottom: 3em;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
+        margin-left: 0.1em;
+        margin-right: 0.1em;
         /*box-shadow: 0 3px 5px rgba(0,0,0,0.104);*/
               
     }
@@ -119,7 +119,7 @@
         display: flex;
         justify-content: right;
         padding-bottom: 0;
-        padding-right: .2em;
+        padding-right: .4em;
     }    
     .iniciar_sesion{
         display: flex;
@@ -340,8 +340,8 @@
         background-color: rgb(133, 154, 197);
         height: 25vh;       
         margin-top: 2em;
-        margin-right: 1em;
-        margin-left: 1em;
+        margin-right: .2em;
+        margin-left: .2em;
     }
     .caja_producto{
         display: flex;
@@ -457,8 +457,8 @@
         background-color: black;
         justify-content: left;
         margin: 0;
-        margin-right: 1em;
-        margin-left: 1em;
+        margin-right: .2em;
+        margin-left: .2em;
     }
     
     #ubicacion{
@@ -501,6 +501,10 @@
         color: white;
         list-style-type: none;
         text-decoration: none;
+    }
+    iframe{
+        width: 350;
+        height: 250;
     }
     .maquetado{
         font-weight: normal;

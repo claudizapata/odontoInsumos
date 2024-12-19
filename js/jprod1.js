@@ -1,4 +1,4 @@
-fetch("./js/jprod.json")
+fetch("./jprod.json")
     .then((resp) => resp.json())
     .then((jprod) => {
         const section = document.getElementsByClassName("seccion_prod");
