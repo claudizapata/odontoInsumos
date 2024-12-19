@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./stylesProductos.css">
 
     <link rel="icon" type="image/png"   href="imagenes/muelita_marca_menor.png" sizes="64x64">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
@@ -13,12 +13,11 @@
     <header class="header_fondo_prod">
         <div class="caja_header_productos">
             <div class="container_tit_carrito">
-                <h1 class="insumos_tit_prod estilo">Odonto Insumos</h1>
+                <h1 class="insumos_tit_prod    estilo">Odonto Insumos</h1>
                 <div class="caja_carrito">
-                    <a href="#"><img class="icon_carrito" src="./imagenes/iconos/cart-shopping-solid.png" alt="carrito"></a>
-                    <a href="#"><img class="icon_carrito_celeste" src="./imagenes/iconos/cart-shopping-celeste.png" alt="carrito"></a>
-                    <p>carrito</p>
-                    <p class="cantidad" id="cantidad">0</p>                
+                    <a href="./carrito.html"><img class="icon_carrito" src="./imagenes/iconos/cart-shopping-solid.png" alt="carrito"></a>
+                    <a href="./carrito.html"><img class="icon_carrito_celeste" src="./imagenes/iconos/cart-shopping-celeste.png" alt="carrito"></a>
+                    <!--<p class="cantidad" id="cantidad">0</p>-->
                 </div> 
             </div>
             <div class="header_nav">
@@ -33,7 +32,7 @@
         <div class="container__titulo__parrafo"  >
             <h1 class="estilo _titulo">Productos</h1>
             <p class="estilo _parrafo">Podrás encontrar nuestros
-            productos agrupados, a los cuales se accede por los links correspondientes<br></p>
+            productos con su correspondiente descripción<br></p>
         </div>
 
     </header>
@@ -41,7 +40,7 @@
         <div class="separa">
 
         </div>
-        <div class="botones_secciones">
+        <!--<div class="botones_secciones">
             <ul class="nav_botones_secciones">
                 <li class="boton_inst"><a class="link_boton" href="#instrumental">Ir a Instrumental</a></li>
                 <li class="boton_inst"><a class="link_boton" href="#descartables">Ir a Descartables</a> </li>                               
@@ -52,119 +51,26 @@
                 <a class="link_bot" href="#descartables">Ir a Descartables</a>
             </nav>
            
-        </div>
+        </div>-->
         <div>
             <section id="productos">
-                <h2 class="estilo3 titulo_seccion">Materiales Dentales</h2>
+                <h2 class="estilo3 titulo_seccion">Materiales Dentales  |  Instrumental  |  Descartables</h2>
             </section>
             <section class="seccion_prod">
-                <div class="caja_prod">
-                    <img class="prod_imagen" src="./imagenes/flex_productos/Alginato_453gr.png" alt="alginato">              
-                    <p class="prod_titulo">Alginato 435gr</p>
-                    <p class="prod_titulo">$8.000</p>
-                    <p class="prod_descrip">Alginato para impresiones con indicador de fase cromática</p>                       
-                    <button class="prod__boton" onclick="comprar()">Agregar al carrito</button>
-                </div>
-                <div class="caja_prod">
-                    <img class="prod_imagen" src="./imagenes/flex_productos/composite.png" alt="composite">
-                    <p class="prod_titulo"> Composite</p>
-                    <p class="prod_titulo">$11.000</p>
-                    <p class="prod_descrip">Composite Flow Fusion Dental + Jeringa 2g</p>
-                    <button class="prod__boton">Agregar al carrito</button>
-                </div>
-                <div class="caja_prod">
-                    <img class="prod_imagen" src="./imagenes/flex_productos/ionomero-15gr.png" alt="ionomero">
-                    <p class="prod_titulo">Ionómero</p>
-                    <p class="prod_titulo">$63.000</p>
-                    <p class="prod_descrip">Cem Meron Pack Voco 35gr + Líq 15ml</p>
-                    <button class="prod__boton">Agregar al carrito</button>
-                </div>
+                <article data-id="" class="caja_prod"> 
+                        <img src="" alt="">
+                        <h3 class="prod_titulo"></h3>
+                        <p class="prod_titulo">$</p>       
+                        <p class="prod_descrip"></p>                             
+                        <button type="button" class="prod__boton" >Agregar al carrito</button>
+                </article>
             </section>
         </div>
-        <div class="separa_header">
-            <section id="instrumental">
-                <h2 class="estilo3 titulo_seccion">Instrumental</h2>
-            </section>
-            <section class="seccion_prod">
-                <div class="caja_prod">
-                    <img class="prod_imagen" src="./imagenes/flex_productos/pinza_extraccion.png" alt="pinzas">
-                    <p class="prod_titulo">Pinzas de Extracción</p>
-                    <p class="prod_titulo">$63.000</p>
-                    <p class="prod_descrip">Para raíces están diseñadas para una extracción precisa y segura de piezas dentarias</p>
-                    <button class="prod__boton">Agregar al carrito</button>
-                </div>
-                <div class="caja_prod">
-                    <img class="prod_imagen" src="./imagenes/flex_productos/Pinza-quita-brackets.png" alt="pinzaBrackets">
-                    <p class="prod_titulo"> Pinza Brackets</p>
-                    <p class="prod_titulo">$68.000</p>
-                    <p class="prod_descrip">Pinza De Ortodoncia Quita Brackets</p>
-                    <button class="prod__boton">Agregar al carrito</button>
-                </div>
-                <div class="caja_prod">
-                    <img class="prod_imagen" src="./imagenes/flex_productos/triada-dental.png" alt="explorador">
-                    <p class="prod_titulo">Explorador y Espejo</p>
-                    <p class="prod_titulo">$5.800</p>
-                    <p class="prod_descrip">Triada Dental Espejo + Explorador + Pinza</p>
-                    <button class="prod__boton">Agregar al carrito</button>
-                </div>
-            </section>
-        </div>
-        <div class="separa_header">
-            <section id="descartables">
-                <h2 class="estilo3 titulo_seccion">Descartables</h2>
-            </section>
-            <section>
-                <div class="seccion_prod">
-                    <div class="caja_prod">
-                        <img class="prod_imagen" src="./imagenes/flex_productos/babero.png" alt="baberos">              
-                        <p class="prod_titulo">Baberos</p>
-                        <p class="prod_titulo"> $4.800</p>
-                        <p class="prod_descrip">Importados Biokit pack X 100 Un</p>
-                        <button class="prod__boton">Agregar al carrito</button>
-                    </div>
-                    <div class="caja_prod">
-                        <img class="prod_imagen" src="./imagenes/flex_productos/barbijos.png" alt="barbijos">
-                        <p class="prod_titulo"> Barbijos</p>
-                        <p class="prod_titulo"> $1.720</p>
-                        <p class="prod_descrip">Kn 95 X 10 Un en sobre Individual Color</p>
-                        <button class="prod__boton">Agregar al carrito</button>
-                    </div>
-                    <div class="caja_prod">
-                        <img class="prod_imagen" src="./imagenes/flex_productos/vasos.png" alt="vasos">
-                        <p class="prod_titulo">Vasos</p>
-                        <p class="prod_titulo"> $3.250</p>
-                        <p class="prod_descrip">Capacidad 110cc Pack x 100 Un</p>
-                        <button class="prod__boton">Agregar al carrito</button>
-                    </div>
-                    <div class="caja_prod">
-                        <img class="prod_imagen" src="./imagenes/flex_productos/agujas_carpule.png" alt="agujasCarpule">
-                        <p class="prod_titulo"> Agujas Carpule</p>
-                        <p class="prod_titulo"> $15.999</p>
-                        <p class="prod_descrip">Agujas Descartables para Carpule X100 Anestesia</p>
-                        <button class="prod__boton">Agregar al carrito</button>
-                    </div>
-                    <div class="caja_prod">
-                        <img class="prod_imagen" src="./imagenes/flex_productos/suctores_saliva-F.png" alt="suctores">
-                        <p class="prod_titulo"> Suctores para saliva</p>
-                        <p class="prod_titulo"> $6.590</p>
-                        <p class="prod_descrip">Suctores para Saliva X 100 Un</p>
-                        <button class="prod__boton">Agregar al carrito</button>
-                    </div>
-
-                </div>
-                
-            </section>
-        </div>
-
-        <ul id="lista_prod">
-            <!--<li class="unidad_prod"><input type="checkbox"><button>+</button>producto<button>-</button></li>-->
-        </ul>
     </main>
     <footer>
-        
-        
 
     </footer>
-    <script src="/js/carrito.js"></script>
+    <script src="./js/jprod1.js"></script>
+    
 </body>
 </html>

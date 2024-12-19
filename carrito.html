@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesCarrito.css">
+    <title>Lista</title>
+</head>
+<body>
+    <header>
+        <h1 id="lista_titulo">Lista de productos añadidos al carrito</h1>
+    </header>
+    <main>
+      <section id="carrito">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>               
+                </tr>
+            </thead>
+            <tbody class="items">
+                <tr data-id="" class="linea_prod">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>                
+            </tbody>           
+        </table>
+      </section>
+      
+    </main>
+
+    <footer>
+        <div class="botones_compra">
+            <button id="btn_vaciar">Vaciar Carrito</button>
+            <button id="btn_finalizar">Finalizar Compra</button>
+        </div>
+        
+
+    </footer>
+    <script src="./js/productos.js"></script>
+    <script src="./js/carrito.js"></script>
+   
+</body>
+</html>

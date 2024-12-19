@@ -1,0 +1,41 @@
+
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+.estilo{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    
+   
+}
+.estilo2{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    text-align: center;
+    padding: 1.5em;
+}
+
+#lista_titulo{    
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: rgb(0, 199, 226);
+}
+.ancho_lista{
+    height: 50%;
+    width: 40em;
+    background-color: bisque;
+    justify-content: space-around;
+}
+.unidad_prod{    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around  ;
+    align-content:center;
+}
+.botones_compra{
+    margin-top: 10em;
+}
