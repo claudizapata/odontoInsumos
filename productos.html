@@ -7,6 +7,9 @@
 
     <link rel="icon" type="image/png"   href="imagenes/muelita_marca_menor.png" sizes="64x64">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <script src="./js/jprod1.js" defer></script>
+    <script src="./js/agregarCarrito.js"></script>
+    
     <title>Productos</title>
 </head>
 <body>
@@ -17,6 +20,7 @@
                 <div class="caja_carrito">
                     <a href="./carrito.html"><img class="icon_carrito" src="./imagenes/iconos/cart-shopping-solid.png" alt="carrito"></a>
                     <a href="./carrito.html"><img class="icon_carrito_celeste" src="./imagenes/iconos/cart-shopping-celeste.png" alt="carrito"></a>
+                    <span id="cuenta">0</span>
                     <!--<p class="cantidad" id="cantidad">0</p>-->
                 </div> 
             </div>
@@ -57,22 +61,23 @@
                 <h2 class="estilo3 titulo_seccion">Materiales Dentales  |  Instrumental  |  Descartables</h2>
             </section>
             <section class="seccion_prod">
-                <article data-id="" class="caja_prod"> 
+                <!--<article data-id="" class="caja_prod"> 
                         <img src="" alt="">
                         <h3 class="prod_titulo"></h3>
                         <p class="prod_titulo">$</p>       
                         <p class="prod_descrip"></p>                             
-                        <button type="button" class="prod__boton" >Agregar al carrito</button>
-                </article>
+                        <button type="button" class="prod__boton" onclick="agregarProducto()">Agregar al carrito</button>
+                </article>-->
             </section>
         </div>
-        <script src="./js/jprod1.js"></script>
+       
        
     </main>
     <footer>
 
     </footer>
+   
     
-    
+   
 </body>
 </html>

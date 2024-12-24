@@ -91,8 +91,6 @@ const productos = [
     },
 ];
 
-const carrito = JSON.parse(localStorage.getItem("carrito")) || [];//si no hay nada en el carrito trae un array vacío
-
 //SECCION MATERIALES DENTALES
 const listadoProductos = document.querySelector('.seccion_prod');
 listadoProductos.innerHTML = "";
@@ -109,6 +107,9 @@ productos.forEach((producto) => {
     listadoProductos.innerHTML += html;
 });
 //Hacemos click para COMPRAR
+
+const carrito = JSON.parse(localStorage.getItem("carrito")) || [];//si no hay nada en el carrito trae un array vacío
+
 document.addEventListener("click", (event) =>{//recibe el evento click y se ejecuta un funior
     if(event.target.classList.contains("prod__boton")){
         const id=  event.target.closest("article").dataset.id;//porque "article" es el contenedor más cercano al evento(botón) que tiene el id
