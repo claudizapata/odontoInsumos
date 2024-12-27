@@ -1,6 +1,6 @@
 const carrito = JSON.parse(localStorage.getItem("carrito")) || [];//si no hay nada en el carrito trae un array vacío
 
-fetch("./js/jprod.json")
+fetch("/js/jprod.json")
     
     .then((resp) => resp.json())
     .then((jprod) => {
@@ -32,7 +32,7 @@ fetch("./js/jprod.json")
             const id=  event.target.closest("article").dataset.id;//porque "article" es el contenedor más cercano al evento(botón) que tiene el id
               //buscar en el carrito producto
               const index = carrito.findIndex((item) => item.id === id);
-              fetch("./js/jprod.json")
+              fetch("/js/jprod.json")
                 .then((resp) => resp.json())
                 .then((jprod) => {
              
