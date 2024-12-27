@@ -24,7 +24,7 @@ Cada archivo html tiene vinculado un archivo .css que le da los estilos a cada p
 JavaScript:
 jprod.json es el archivo que contiene el array de productos de odontología.
 
-jprod1.js es el archivo que contiene el código con la promesa mediante fetch y catch, que trae los elementos del jprod.json y los renderiza en el index.html.
+jprod1.js es el archivo que contiene el código con la promesa mediante fetch y catch, que trae los elementos del jprod.json y los renderiza en el productos.html.
 
 GitHub:
 A la subida del proyecto al repositorio en GitHub la realicé de la siguiente manera:
