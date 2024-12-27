@@ -11,8 +11,10 @@ El sitio está conformado por 5 páginas web: Index - Productos - Contacto - Res
  Además, contiene un Nosotros y un Footer con un mapa (iframe) y links a las demás páginas .html al igual que el navBar.
 
  productos.html = contiene un navBar con los links a las otras páginas .html incluido index.html, y el listado de productos. El listado de productos publicados está maquetado con flexbox mediante flex-wrap = wrap y tamaño de margen derecho para dejar calles entre las cajas.
+ .El listado de productos que contiene esta página está renderizado con código js contenido en el archivo jprod1.js el código que contiene permite acceder a la api que es un archivo JSON que contiene los productos que se renderizan con sus atributos, en cada caja por cada producto.
+ .Esta página permite cargar el producto que reciba el evento (click) del usuario al carrito de compras (localStorage), acá permanecen los productos hasta que se vacíe el carrito por acción del usuario.
 
- contacto.html = contiene, luego del Header, un formulario de Fromspree que permite completarlo y enviarlo a la dirección de correo configurada desde la página de Fromspree. Le incorporé validación del formato de email mediante un script que desarrollé llamado validar_correo.js
+ contacto.html = contiene, luego del Header, un formulario de Fromspree que permite completarlo y enviarlo a la dirección de correo configurada desde la página de Fromspree. Le incorporé validación del formato de email mediante un script que desarrollé llamado validar_correo.js. Desde contacto.html, al hacer click en "Enviar" mediante el método onClick, llamo a la función contenida en el archivo .js, en esa función se valida el formato de la dirección de email que el usuario ingresó por el input.
 
  resenas.html = contiene, luego del Header, un formulario diseñado con elementos html, desde el cual se puede publicar una breve reseña que queda guardada visualizada en una caja a continuación, las reseñas se van agregando, completando cada fila.
 

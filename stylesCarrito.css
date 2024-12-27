@@ -5,6 +5,7 @@
     text-align: left;
     padding: 1em;
     color: black;
+    
 }
 #lista_titulo{
     padding: 0;
@@ -15,15 +16,14 @@
 #carrito{
     font-size: 3em;
 }
-.items{
-    color: blue;
-}
-.linea_prod{
+.lista_prod{
     color: black;
+    font-size: 3em;
 }
 
 td{
     border-bottom: solid black;
+    color: black;
 }
 .botones_compra{
     display: flex;    

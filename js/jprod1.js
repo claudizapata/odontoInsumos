@@ -25,19 +25,20 @@ fetch("./js/jprod.json")
         console.log (error);
     }); 
  
-   
-    
     document.addEventListener("click", (event) =>{//recibe el evento click y se ejecuta un funior
         if(event.target.classList.contains("prod__boton")){
+            //Obtengo el id del atributo data-id
             const id=  event.target.closest("article").dataset.id;//porque "article" es el contenedor más cercano al evento(botón) que tiene el id
               //buscar en el carrito producto
-              const index = carrito.findIndex((item) => item.id === id);
+            const index = carrito.findIndex((item) => item.id === id);
               fetch("./js/jprod.json")
                 .then((resp) => resp.json())
                 .then((jprod) => {
              
-                if (index == -1){     
-                    const productoBusco = jprod.find((producto) => producto.id == id);                
+                if (index == -1){//-1 quiere decir que no hay productos en el carrito, entonces lo carga y cantidad=1
+                    //si no es -1, es porque hay productos (El arrary arranca de 0), entonces sale por else, y suma++ al que ya está con el mismo id
+                    const productoBusco = jprod.find((producto) => producto.id == id);
+              
                     //console.log(productoBusco);        
                     const { nombre, precio} = productoBusco; //Al producto encontrado le sacó el nombre y el precio, al id ya lo tengo, me lo pasó el evento de arriba
                     const producto = {//Construyo el objeto producto que elegí
@@ -45,16 +46,20 @@ fetch("./js/jprod.json")
                         nombre: nombre,
                         precio: precio,
                         cantidad: 1,
-                    };
+                    }; 
                 
                 carrito.push(producto);           
             } else{
-                const producto = carrito[index];
-                producto.cantidad++;
-            }
+                const producto = carrito[index];//Significa que traigo ese producto que está en el carrito, porque
+                //...ya fue cargado y lo cuento para ese producto con mismo id que el que ya está en el carrito(localStorage)
+                producto.cantidad++;               
+            }         
             //Guardo en el localStorage el array carrito en formato JSON
             localStorage.setItem('carrito', JSON.stringify(carrito));
         })
+        .catch((error) => {
+            console.log(error);
+        });
 }
 });
 

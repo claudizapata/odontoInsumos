@@ -293,7 +293,7 @@ article .prod_titulo{
     }    
     ._titulo{    
         font-size: 1.5em;
-        font-weight: 300;
+        font-weight:  bold;
         color: black;
         margin-right: 0;
         margin-left: 0;
@@ -379,18 +379,18 @@ article .prod_titulo{
     article img{
         padding: .2em;
         align-items: center;
-        height: 4.5em;
+        height: 4em;
         aspect-ratio: 2;        
     }
-    .prod_titulo{
-        color: black;
+    article .prod_titulo{
+        color: blue;
         text-align: center;
         font-family: "Roboto", sans-serif;
         align-items: center;
         font-weight: bold;        
         background-color: white;
         height: 1.5em;        
-        margin-bottom: .1 em;
+        margin-bottom: .1em;
         font-size: .5em;     
     }
     .prod_descrip{
@@ -399,7 +399,7 @@ article .prod_titulo{
         align-items: center;
         padding-left: 0.2em;
         padding-right: 0.2em;
-        height: 7vh;
+        height: 3em;
         font-size: .4em;
     }
     .prod__boton{
@@ -416,6 +416,6 @@ article .prod_titulo{
         
     }    
     .prod__boton:hover{
-        color: blue;
+        color: rgb(26, 179, 230);
     }
 }
