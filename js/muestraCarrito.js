@@ -1,6 +1,6 @@
 
 //console.log(carrito);
-
+const carrito = JSON.parse(localStorage.getItem("carrito"));
 const items = document.querySelector('.linea');
 items.innerHTML = "";
 carrito.forEach((item)  => {

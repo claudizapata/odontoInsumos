@@ -14,7 +14,7 @@ fetch("./js/jprod.json")
                             <h3 class="prod_titulo">${prod.nombre}</h3>
                             <p class="prod_titulo">$${prod.precio}</p>       
                             <p class="prod_descrip">${prod.descripcion}</p>                             
-                            <button type="button" class="prod__boton" id="boton" >Agregar al carrito</button>
+                            <button type="button" class="prod__boton" id="boton" >Agregar</button>
                     </article>
                 `;
                 section.innerHTML += html;
