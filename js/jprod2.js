@@ -1,4 +1,4 @@
-let memoria = JSON.parse(localStorage.getItem("./js/jprod.json")) || [];
+/* let memoria = JSON.parse(localStorage.getItem("./js/jprod.json")) || [];
 const seccion = document.querySelector(".seccion_prod");
 
 function crearTarjetaProducto(prods){
@@ -18,4 +18,11 @@ function crearTarjetaProducto(prods){
 
 }
 crearTarjetaProducto(memoria);
-                   
+                    */
+
+// Select the element 
+function boton(){
+    var button = document.getElementById('boton'); // Attach the event listener
+    console.log("boton");
+    button.addEventListener('click', function() { alert('Button was clicked!'); });
+};
