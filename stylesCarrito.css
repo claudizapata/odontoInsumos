@@ -2,10 +2,9 @@
 *{
     font-family: "Roboto", sans-serif;
     font-style: normal;
-    text-align: left;
-    padding: 1em;
+    text-align: left;   
     color: black;
-    
+    padding: 1em;
 }
 #lista_titulo{
     padding: 0;
@@ -17,13 +16,15 @@
     font-size: 3em;
 }
 .lista_prod{
+    margin-top: 2em;
     color: black;
     font-size: 3em;
 }
-
 td{
     border-bottom: solid black;
     color: black;
+    font-size: 2em;
+    justify-items: center;  
 }
 .botones_compra{
     display: flex;    
@@ -44,3 +45,54 @@ button{
 button:hover{
     color: rgb(39, 173, 203);
 }
+#suma{
+    font-size: 3em;
+}
+@media screen and (max-width:768px) {
+
+    *{
+        padding: 0.5em;
+    }   
+    #lista_titulo{
+        padding: 0;
+        border-bottom: solid black;
+        color: rgb(39, 173, 203);
+        font-size: 1em;
+    }
+    #carrito{
+        font-size: .8em;
+    }
+    .lista_prod{
+        color: black;
+        font-size: .8em;
+    }
+    td{
+        border-bottom: solid black;
+        color: black;
+        font-size: .5em;
+        justify-items: center;  
+    }
+    .botones_compra{
+        display: flex;    
+        align-items: center;
+    }   
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        padding: 0.4em 0.7em;
+        border-radius: 5px;
+        background-color: rgb(50, 50, 230);
+        color: white;
+        font-size: .5em;
+        font-weight: bold;
+        margin-right: 2em;            
+    }
+    button:hover{
+        color: rgb(39, 173, 203);
+    }
+    #suma{
+        font-size: 1em;
+    }
+        
+    }
