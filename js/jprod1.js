@@ -56,6 +56,15 @@ fetch("./js/jprod.json")
             }         
             //Guardo en el localStorage el array carrito en formato JSON
             localStorage.setItem('carrito', JSON.stringify(carrito));
+            const sumaCantidad = carrito.reduce((sum, item) => sum + item.cantidad, 0);
+            const contador = document.querySelector(".caja_carrito");
+            const htmlContador = `
+                <a href="./muestraCarrito.html"><img class="icon_carrito" src="./imagenes/iconos/cart-shopping-solid.png" alt="carrito"></a>
+                <a href="./muestraCarrito.html"><img class="icon_carrito_celeste" src="./imagenes/iconos/cart-shopping-celeste.png" alt="carrito"></a>          
+               <span id="cuenta">${sumaCantidad}</span>
+              `;
+              contador.innerHTML = htmlContador;
+          
         })
         .catch((error) => {
             console.log(error);
