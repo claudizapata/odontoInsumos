@@ -7,7 +7,7 @@
 
     <link rel="icon" type="image/png"   href="imagenes/muelita_marca_menor.png" sizes="64x64">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-    <script src="./js/jprod1.js" defer></script>    
+    
     <script ></script>
     
     <title>Productos</title>
@@ -18,9 +18,13 @@
             <div class="container_tit_carrito">
                 <h1 class="insumos_tit_prod    estilo">Odonto Insumos</h1>
                 <div class="caja_carrito">
-                   <!--  <a href="./muestraCarrito.html"><img class="icon_carrito" src="./imagenes/iconos/cart-shopping-solid.png" alt="carrito"></a>
-                    <a href="./muestraCarrito.html"><img class="icon_carrito_celeste" src="./imagenes/iconos/cart-shopping-celeste.png" alt="carrito"></a> -->
-                    <!-- <span id="cuenta">0</span> -->
+                    <div class="img_carrito">
+                        <a href="./muestraCarrito.html"><img class="icon_carrito" src="./imagenes/iconos/cart-shopping-solid.png" alt="carrito"></a>
+                        <a href="./muestraCarrito.html"><img class="icon_carrito_celeste" src="./imagenes/iconos/cart-shopping-celeste.png" alt="carrito"></a>
+                    </div>
+                    <div class="cuenta_carrito">
+                         <!-- <span id="cuenta">0</span> -->
+                    </div>
                 </div> 
             </div>
             <div class="header_nav">
@@ -31,13 +35,13 @@
                     </nav>
             </div>      
         </div>
-       
+      
         <div class="container__titulo__parrafo"  >
             <h1 class="estilo _titulo">Productos</h1>
             <p class="estilo _parrafo">Podrás encontrar nuestros
             productos con su correspondiente descripción<br></p>
         </div>
-
+ 
     </header>
     <main class="cuerpo_main">
         <div class="separa">
@@ -76,5 +80,9 @@
     <footer>
 
     </footer>
+    <script src="./js/jprod1.js"></script>    
+    <script>
+        cargaProductos();
+    </script>
 </body>
 </html>

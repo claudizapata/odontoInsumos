@@ -1,0 +1,5 @@
+
+function vaciarCarrito(){
+    localStorage.clear();
+    
+ }

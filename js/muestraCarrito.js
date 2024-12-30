@@ -25,4 +25,3 @@ carrito.forEach((item)  => {
      <p class="sumaTotal">Total: \n \n $${sumaTotal}</p>
     `;
     suma.innerHTML = htmlSuma;
-

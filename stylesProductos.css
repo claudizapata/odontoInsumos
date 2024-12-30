@@ -40,14 +40,17 @@
 }
 .container_tit_carrito{
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
+    align-items: center;
 }
 .caja_carrito{
     display: flex;
-    flex-direction: column;
-    justify-content: right;
     margin-top: 2em;
-    margin-right: 3em;    
+    margin-right: 3em;
+    font-size: 1em;
+}
+.img_carrito{
+    margin-right: .8em;
 }
 .icon_carrito{
     width: 2.5em;
@@ -236,20 +239,20 @@ article .prod_titulo{
     }
     .icon_carrito{
         display: none;
-    }    
-    .icon_carrito_celeste{
-        display: block;
-        width: 25px;
-        height: 25px;
-        text-align: right;
     }
     .caja_carrito{
         display: flex;
-        flex-direction: column;
-        margin-top: 0;
+         margin-top: 0;
         margin-right: 1em;
+        font-size: .8em;
     }
-    
+    .icon_carrito_celeste{
+        display: block;
+        width: 15px;
+        height: 15px;
+        text-align: right;
+        margin-right: 0;
+    }
     #cuenta{
         font-weight: bold;
         font-size: 1em;
