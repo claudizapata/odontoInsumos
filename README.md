@@ -18,7 +18,7 @@ El sitio está conformado por 5 páginas web: Index - Productos - Contacto - Res
 
  resenas.html = contiene, luego del Header, un formulario diseñado con elementos html, desde el cual se puede publicar una breve reseña que queda guardada visualizada en una caja a continuación, las reseñas se van agregando, completando cada fila.
 
- carrito.hrml = es donde quedan visualizados todos los productos en forma de listado (tabla) que fueron guardados en el localStorage (carrito) desde la página productos.html
+ muestraCarrito.html = es donde quedan visualizados todos los productos en forma de listado (tabla) que fueron guardados en el localStorage (carrito) desde la página productos.html
 
 Estilos:
 Cada archivo html tiene vinculado un archivo .css que le da los estilos a cada página.
@@ -26,8 +26,10 @@ Cada archivo html tiene vinculado un archivo .css que le da los estilos a cada p
 JavaScript:
 jprod.json es el archivo que contiene el array de productos de odontología.
 
-jprod1.js es el archivo que contiene el código con la promesa mediante fetch y catch, que trae los elementos del jprod.json y los renderiza en el productos.html.
+jprod1.js es el archivo que contiene el código con la promesa mediante async await, que trae los elementos del jprod.json y los renderiza en el productos.html. También contiene el addEventListener que es el escuchador del evento click, que contiene la rutina que va a cargar el producto en el carrito cuando el usuario hace click en el producto.
+
+muestraCarrito.js: contiene el código js que permite renderizar en forma de listado, el contenido del localStorage, con los productos que fueron cargados por el usuario desde la página productos.html.
 
 GitHub:
 A la subida del proyecto al repositorio en GitHub la realicé de la siguiente manera:
-Desde la carpeta del proyecto en el explorador de Windows, hago botón derecho (Git Bash), se me abre la ventana en modo comando, y allí ingreso por consola los siguientes comandos: git status - git add . - git commit -m "....." - git push -u origin main
+Desde la carpeta del proyecto en el explorador de Windows, hago botón derecho (Git Bash), se me abre la ventana en modo comando, y allí ingreso por consola los siguientes comandos: git status - git add . - git commit -m "....." - git push -u origin main.
