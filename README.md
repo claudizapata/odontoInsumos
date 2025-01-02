@@ -27,7 +27,7 @@ Cada archivo html tiene vinculado un archivo .css que le da los estilos a cada p
 JavaScript:
 jprod.json es el archivo que contiene el array de productos de odontología.
 
-jprod1.js es el archivo que contiene el código con la promesa mediante fetch y catch, que trae los elementos del jprod.json y los renderiza en el productos.html. Además, contiene el código que permite cargar el producto en el carrito, para ello escucha el evento, carga el producto que recibe el click(evento) del usuario. Por cada producto que carga, incrementa el contador. Por otra parte, permite incremetar el contador de productos cada vez que el usuario hace click en "Agregar" al carrito de compras.
+jprod1.js es el archivo que contiene el código, con la promesa con async await, que trae los elementos del jprod.json y los renderiza en el productos.html. Además, contiene el código que permite cargar el producto en el carrito, para ello escucha el evento, carga el producto que recibe el click(evento) del usuario. Por cada producto que carga, incrementa el contador. Por otra parte, permite incremetar el contador de productos cada vez que el usuario hace click en "Agregar" al carrito de compras.
 
 muestraCarrito.js: contiene el código js que permite renderizar en forma de listado, el contenido del carrito (localStorage), con los productos que fueron cargados por el usuario desde la página productos.html.
 
