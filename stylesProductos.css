@@ -182,6 +182,7 @@ article .prod_titulo{
     background-color: white;
     height: 1em;    
     margin-bottom: 1em;
+    font-size: 1.2em;
 }
 .prod_descrip{
     height: 2em;
@@ -202,6 +203,11 @@ article .prod_titulo{
 }
 .prod__boton:hover{
     font-weight: bold;
+}
+
+.modal3{
+    color: brown;
+    font-size: 3em;
 }
 
 @media screen and (max-width: 768px) {
@@ -420,5 +426,9 @@ article .prod_titulo{
     }    
     .prod__boton:hover{
         color: rgb(26, 179, 230);
+    }
+    .detalle__boton{
+        padding: .1em .1em;
+        font-size: .4em;
     }
 }

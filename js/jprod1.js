@@ -28,15 +28,14 @@ const mostrarProductos = (jprod) =>{
                             <p class="prod_titulo">$${prod.precio}</p>       
                             <p class="prod_descrip">${prod.descripcion}</p>                             
                             <button type="button" class="prod__boton" id="boton" >Agregar</button>
+                            <button id="myBtn" class="detalle__boton">Detalle</button>
                     </article>
                 `;
                 section.innerHTML += html;
-
-        });
+         });
     };
-  
-    
 
+  //Carga el producto en el carrito, para ello escucha el evento, carga el producto que recibe el click en "Agregar" por parte del usuario
     document.addEventListener("click", (event) =>{//recibe el evento click y se ejecuta un funior
         if(event.target.classList.contains("prod__boton")){
             //Obtengo el id del atributo data-id
@@ -68,6 +67,7 @@ const mostrarProductos = (jprod) =>{
             }         
             //Guardo en el localStorage el array carrito en formato JSON
             localStorage.setItem('carrito', JSON.stringify(carrito));
+
             const sumaCantidad = carrito.reduce((sum, item) => sum + item.cantidad, 0);
             const contador = document.querySelector(".cuenta_carrito");
             const htmlContador = `
@@ -81,6 +81,27 @@ const mostrarProductos = (jprod) =>{
         });
 }
 });
+
+//Abre el detalle del Producto en el Modal
+const grilla = document.querySelector(".seccion_prod");
+const modal = document.getElementById("myModal");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 const carrito = JSON.parse(localStorage.getItem("carrito")) || [];//si no hay nada en el carrito trae un array vacío
 

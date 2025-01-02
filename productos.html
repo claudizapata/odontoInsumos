@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Productos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesProductos.css">
+    <link rel="stylesheet" href="./stylesModal.css">
 
     <link rel="icon" type="image/png"   href="imagenes/muelita_marca_menor.png" sizes="64x64">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-    
-    <script ></script>
-    
-    <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
     <header class="header_fondo_prod">
         <div class="caja_header_productos">
             <div class="container_tit_carrito">
-                <h1 class="insumos_tit_prod    estilo">Odonto Insumos</h1>
+                <h1 class="insumos_tit_prod  estilo">Odonto Insumos</h1>
                 <div class="caja_carrito">
                     <div class="img_carrito">
                         <a href="./muestraCarrito.html"><img class="icon_carrito" src="./imagenes/iconos/cart-shopping-solid.png" alt="carrito"></a>
@@ -28,11 +29,11 @@
                 </div> 
             </div>
             <div class="header_nav">
-                    <nav class="nav_container_prod">
-                        <a class="link_prod"  href="./index.html">Home</a>
-                        <a class="link_prod"  href="./resenas.html">Reseñas</a>
-                        <a class="link_prod"  href="./contacto.html">Contacto</a>                 
-                    </nav>
+                <nav class="nav_container_prod">
+                    <a class="link_prod"  href="./index.html">Home</a>
+                    <a class="link_prod"  href="./resenas.html">Reseñas</a>
+                    <a class="link_prod"  href="./contacto.html">Contacto</a>                 
+                </nav>
             </div>      
         </div>
       
@@ -69,20 +70,46 @@
                         <h3 class="prod_titulo"></h3>
                         <p class="prod_titulo">$</p>       
                         <p class="prod_descrip"></p>                             
-                        <button type="button" class="prod__boton" onclick="agregarProducto()">Agregar al carrito</button>
+                        <button type="button" class="prod__boton">Agregar</button>
                 </article>-->
             </section>
         </div>
        <!--  <button id="myButton" onclick="boton()">prueba</button> -->
-       
-       
+         
     </main>
+    
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
     <footer>
-
+       
     </footer>
-    <script src="./js/jprod1.js"></script>    
+    <script src="./js/jprod1.js"></script>   
+    
     <script>
         cargaProductos();
     </script>
-</body>
+ </body>
 </html>
